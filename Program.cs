@@ -41,9 +41,6 @@ namespace Desafio_02
 
 
 
-
-
-
             //Imprime na tela
             Console.WriteLine("UBUNTU 002 - ENDS...");
 

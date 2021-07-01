@@ -260,3 +260,5 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/obj/Debug/net5.0/Desafio_02.assets.cache
+/obj/Debug/net5.0/Desafio_02.csproj.AssemblyReference.cache
