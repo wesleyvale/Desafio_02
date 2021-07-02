@@ -32,10 +32,12 @@ namespace Desafio_02
             //T1 - Somar a idade de todos Ubuntus
             int IDADE = idade1 + idade2 + idade3;
             Console.WriteLine($"Os Ubuntus possuem uma idade total de: {IDADE}.");
+            Console.WriteLine();
 
 
             //T2 - Agrupar os nomes de todos Ubuntus
             Console.WriteLine($"Os Ubuntus presentes são: {nome1}, {nome2} e {nome3}");
+            Console.WriteLine();
 
 
             //T3 - Calcular Média dos IMC de todos Ubuntus
@@ -44,6 +46,7 @@ namespace Desafio_02
             decimal IMC3 = (decimal)peso3 / (altura3 * altura3);
             decimal media = (IMC1 + IMC2 + IMC3) / 3;
             Console.WriteLine($"A média de IMC dos Ubuntus resulta em: {media.ToString("f")}.");
+            Console.WriteLine();
 
 
             //T4 - Contar quantos Ubuntus sao Devs
@@ -74,6 +77,7 @@ namespace Desafio_02
                 EhDev = EhDev;
             };
             Console.WriteLine($"Dentre os Ubuntos,{EhDev} são Devs!");
+            Console.WriteLine();
 
 
             //T5 - Exibir somente Ubuntu com nome Silva
@@ -106,9 +110,11 @@ namespace Desafio_02
             {
                 Silva = Silva;
             };
+            
 
 
             Console.WriteLine($"Dentre os Ubuntos:{Silva} possuem Silva no nome.");
+            Console.WriteLine();
 
             //Imprime na tela
             Console.WriteLine("UBUNTU 002 - ENDS...");
