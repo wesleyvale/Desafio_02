@@ -25,6 +25,9 @@ namespace desafio_2
             double peso3 = 66.50;
             double altura3 = 1.40;
             //bool EhDev3 = false;
+            double imc1 = (peso1 / (altura1 * altura1));
+            double imc2 = (peso2 / (altura2 * altura2));
+            double imc3 = (peso3 / (altura3 * altura3));
 
             Console.WriteLine("UBUNTU 002 - STARTS... \n");
             Console.WriteLine("Tudo o que você sempre quis saber sobre alguns de nossos ubuntus\n");
@@ -51,6 +54,8 @@ namespace desafio_2
                             Console.WriteLine("\nIMC é do Ubuntu1 Silva: " + ((peso1 / (altura1 * altura1)).ToString("0.00")));
                             Console.WriteLine("IMC é do Ubuntu2 Santos: " + ((peso2 / (altura2 * altura2)).ToString("0.00")));
                             Console.WriteLine("IMC é do Ubuntu3 Silva: " + ((peso3 / (altura3 * altura3)).ToString("0.00\n")));
+                            Console.WriteLine("E a média do IMC deles é: " + ((imc1 + imc2 + imc3)/3).ToString("0.00"));
+                            
                             break;
                         case "4":
                             try
@@ -63,6 +68,9 @@ namespace desafio_2
                             {
                                 return;
                             }
+
+                            //A opção mais simples para a tarefa 4, já que há poucos dados
+
                             //if (EhDev1 == true && EhDev2 ==true)
                             //{
                             //    Console.WriteLine("\nUbuntu1 Silva e o Ubuntu2 Santos são devs.");
