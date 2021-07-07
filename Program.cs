@@ -28,6 +28,14 @@ namespace Desafio_02
             decimal altura3 = 1.40M;
             bool EhDev3 = false;
 
+            int soma = idade1 + idade2 + idade3;
+            Console.WriteLine ("a soma da idade dos 3 ubuntos é: "+ soma + "anos");
+            string nomes = nome1 + nome2 + nome3;
+            Console.WriteLine ("Nomes agrupados é: " + nomes);
+
+            Console.Read();
+
+
 
             //T1 - Somar a idade de todos Ubuntus
 
@@ -42,10 +50,11 @@ namespace Desafio_02
 
 
             //Imprime na tela
-            Console.WriteLine("UBUNTU 002 - ENDS...");
+            //Console.WriteLine("UBUNTU 002 - ENDS...");
 
             //PAUSA NA TELA (GAMBIARRA PERMITIDA PRA INICIANTES)
-            Console.Read();
+            //Console.Read();
+
         }
 
 
