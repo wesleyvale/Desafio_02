@@ -1,4 +1,4 @@
-![logo](https://github.com/gitqodeless/gitqodeless/blob/main/logo3.png?raw=true)
+![logo](https://github.com/gitqodeless/gitqodeless/blob/main/logo1.png?raw=true)
 
 # Desafio_02 - Operações Simples
 Imprimir mensagem Pergutando Quantidade de Alunos \
