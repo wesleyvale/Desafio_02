@@ -1,53 +1,41 @@
 ﻿using System;
 
-namespace Desafio_02
+
+namespace Desafio_2
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Numero de alunos");
 
-            //Imprime na tela
-            Console.WriteLine("UBUNTU 002 - STARTS...");
+            int quant = Convert.ToInt32(Console.ReadLine());
+            String[] alunos = new String[quant];
+            int[] nota = new int[quant];
+            String[] lista = new String[quant];
 
-            string nome1 = "Ubuntu1 Silva";
-            int idade1   = 33;
-            double peso1 = 88.50;
-            decimal altura1 = 1.65M;
-            bool EhDev1  = true;
+            Console.WriteLine("Nome do aluno(ENTER) Sua nota");
+            
+            for (int valorX = 0; valorX < alunos.Length; valorX++)
+            {
+                Console.WriteLine("Aluno: ");
+                alunos[valorX] = Console.ReadLine();
 
-            string nome2 = "Ubuntu2 Santos";
-            int idade2 = 26;
-            double peso2 = 84.50;
-            decimal altura2 = 2.10M;
-            bool EhDev2 = true;
+                Console.WriteLine("nota: ");
+                nota[valorX] = Convert.ToInt16(Console.ReadLine());
 
-            string nome3 = "Ubuntu3 Silva";
-            int idade3 = 85;
-            double peso3 = 66.50;
-            decimal altura3 = 1.40M;
-            bool EhDev3 = false;
-
-
-            //T1 - Somar a idade de todos Ubuntus
-
-            //T2 - Agrupar os nomes de todos Ubuntus
-
-            //T3 - Calcular Média dos IMC de todos Ubuntus
-
-            //T4 - Contar quantos Ubuntus sao Devs
-
-            //T5 - Exibir somente Ubuntu com nome Silva
-
-
-
-            //Imprime na tela
-            Console.WriteLine("UBUNTU 002 - ENDS...");
-
-            //PAUSA NA TELA (GAMBIARRA PERMITIDA PRA INICIANTES)
-            Console.Read();
-        }
-
-
+                if (nota[valorX] < quant)
+                {
+                    lista[valorX] = " " + alunos[valorX] + "0" + nota[valorX];
+                }
+                else
+                {
+                    lista[valorX] = alunos[valorX] + " " + "com " + nota[valorX];
+                }
+            }
+             
+            Array.Sort(lista);
+            Console.WriteLine("O aluno com maior nota é o " + lista[ lista.Length - 1 ]);
+         }
     }
 }
